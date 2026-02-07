@@ -1,0 +1,35 @@
+body {
+	background-color: rgb(40,40,40);   /* 灰色背景 */
+	color: white;             /* 白色文字 */
+	font-size: 28px;          /* 大字 */
+	font-family: Arial, sans-serif;
+	
+}
+h1{
+	text-align: center;
+
+			   /* 居中 */
+ 
+   transition: all 0.3s ease;
+	   }
+a{
+
+color: white;             /* 白色文字 */
+	font-size: 40px;          /* 大字 */
+transition: all 0.2s ease;
+
+	text-decoration: none;
+}
+
+a:hover {
+	color: orange;
+		
+	font-size: 50px;
+}
+
+
+
+h1:hover {
+color: orange;
+	font-size: 70px;
+}
