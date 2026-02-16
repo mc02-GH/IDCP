@@ -4,7 +4,7 @@ Hi
 Website is ：
 
 ```
-https://mc02-gh.github.io/MIDH/
+a.midh.gt.tc
 ```
 
-[Here](https://mc02-gh.github.io/MIDH/)
+[Here](a.midh.gt.tc)
