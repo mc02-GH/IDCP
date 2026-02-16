@@ -1,8 +1,10 @@
 body {
-	background-color: rgb(30,30,30);   
+	--bg-color: rgb(30,30,30); 
+		background:var(--bg-color) ; 
 	color: white;             
 	font-size: 28px;          
 	font-family: Arial, sans-serif;
+	transition: all 7s ease;
 	
 }
 h1{
@@ -10,7 +12,7 @@ h1{
 
 			   /* 居中 */
  
-   transition: all 0.3s ease;
+   transition: all 0.6s ease;
 	font-size: 86px;
 	   }
 a{
@@ -33,7 +35,11 @@ a:hover {
 h1:hover {
 color: orange;
 	font-size: 100px;
-		}
+text-shadow: 0px 0px 50px orange;
+--bg-color: rgb(10,10,10);
+}
+
+
 		
 		
 		
@@ -71,9 +77,89 @@ border: 0px solid rgb(255,170,50);
 font-size: 40px;
 	font-weight: 800;
 color: rgb(30,30,30);
-transition: all 0.2s ease;
+transition: all 0.3s ease;
 	margin: 10px;
 	margin-left: 100px;
+}
+.m{
+width: 140px;
+	height: 140px;
+margin: 10px;
+border-radius: 50%;
+background: rgb(30,30,30);
+color: rgb(100,100,100);
+	border: 8px solid rgb(100,100,100);
+font-size: 40px;
+font-weight: 800;
+transition: all 0.4s ease;
+animation: rtt 0.6s ease;
+position: fixed;
+top:10px;
+left:10px;
+z-index: 3;
+}
+.menu{
+position: fixed;
+background: rgb(50,50,50);
+width: 600px;
+height: 1000px;
+border-radius: 20px;
+opacity: 0;
+transition: all 0.2s ease;
+transform: translateX(-600px);
+top:175px
+z-index: 2;
+}
+.n{
+color: rgb(200,200,200);
+font-size: 50px;
+font-weight: 800;
+width: 500px;
+	height: 150px;
+border-radius: 20px;
+border: 0px solid #000;
+background: rgb(40,40,40);
+margin-left: 40px;
+	margin-top:20px;
+transition: all 0.2s ease;
+
+}
+.i{
+color: rgb(30,30,30);
+font-size: 50px;
+font-weight: 800;
+width: 500px;
+	height: 150px;
+border-radius: 20px;
+border: 0px solid #000;
+background: rgb(255,170,50);
+margin-left: 40px;
+	margin-top:20px;
+transition: all 0.2s ease;
+
+}
+.i.e{
+color: rgb(200,200,200);
+background: rgb(40,40,40);
+
+}
+.n.s{
+background: rgb(255,170,50);
+color: rgb(30,30,30);
+
+}
+.m.change{
+border: 0px solid #000;
+color: rgb(30,30,30);
+background: rgb(100,100,100);
+transform: rotate(-20deg);
+}
+.menu.show{
+opacity: 1;
+transform: translateX(0px);
+z-index: 2;
+top:175px;
+
 }
 
 .one:hover {
@@ -109,3 +195,35 @@ li:hover {
 font-size: 60px;
 		 
 }
+
+h4{
+font-size: 175px;
+}
+.glass{
+position: fixed;
+background: rgba(255, 0, 0, 0);
+z-index: 1;
+	
+}
+.glass.show{
+
+background: rgba(255, 255, 255, 0.02);
+width: 1000px;
+height: 4000px;
+top:0;
+left:0;
+backdrop-filter:blur(15px);
+
+}
+
+
+@keyframes rtt {
+ 	0% { 
+	 transform: rotate(200deg);	border: 0px solid #000;
+color: rgb(30,30,30);
+background: rgb(100,100,100);
+		}
+ 	100% { 
+	 transform: rotate(0deg);
+			}
+}=
