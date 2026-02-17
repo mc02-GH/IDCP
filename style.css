@@ -52,20 +52,22 @@ border: 0px solid #000;
 font-size: 50px;
 	font-weight: 800;
 color: rgb(30,30,30);
-transition: all 0.3s ease;
+transition: all 0.2s ease;
 	margin-top: 50px;
 }
 .sec{
+position: absolute;
 width: 800px;
 	height: 200px;
-			background: rgb(30, 30, 30);
+			background: rgb(40, 40, 40);
 			border-radius: 30px;
-border: 10px solid rgb(255,170,50);
+border: 10px solid rgb(200,125,255);
 font-size: 50px;
 	font-weight: 800;
-color: rgb(255,170,50);
-transition: all 0.3s ease;
+color: rgb(225,125,255);
+transition: all 0.2s ease;
 	margin-top: 50px;
+margin-left:50px;
 }
 
 .dld{
@@ -102,7 +104,7 @@ z-index: 3;
 position: fixed;
 background: rgb(50,50,50);
 width: 600px;
-height: 1000px;
+height: 1100px;
 border-radius: 20px;
 opacity: 0;
 transition: all 0.2s ease;
@@ -167,8 +169,8 @@ top:175px;
 		 background: rgb(255, 160, 20);
 }
 .sec:hover{
-width: 900px;
-background: rgb(20,20,30);
+background: rgb(200,125,255);
+color: rgb(30,20,40);
 }
 .dld:hover {
 background: rgb(30,30,30);
@@ -215,7 +217,30 @@ left:0;
 backdrop-filter:blur(15px);
 
 }
+.board{
+width: 900px;
+	height: 2000px;
+background: rgb(40,40,40);
+margin: 30px;
+box-shadow: 0px 0px 0px rgba(0,0,0,0.1);
+border-radius: 20px;
 
+}
+.ind{
+margin: 20px;
+	font-size: 30px;
+font-weight: 600;
+}
+.g{
+color: rgb(100,150,255);
+}
+.blbl{
+color: rgb(255, 125, 190);
+}
+.blbl:hover{
+color: rgb(255,100,170);
+
+}
 
 @keyframes rtt {
  	0% { 
@@ -226,4 +251,4 @@ background: rgb(100,100,100);
  	100% { 
 	 transform: rotate(0deg);
 			}
-}=
+}
